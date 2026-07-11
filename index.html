@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,9 +19,13 @@
       --radius: 20px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -39,14 +44,12 @@
       position: fixed;
       inset: 0;
       background:
-        linear-gradient(transparent 0%, rgba(255,255,255,0.02) 50%, transparent 100%),
-        repeating-linear-gradient(
-          90deg,
-          rgba(255,255,255,0.03) 0,
-          rgba(255,255,255,0.03) 1px,
+        linear-gradient(transparent 0%, rgba(255, 255, 255, 0.02) 50%, transparent 100%),
+        repeating-linear-gradient(90deg,
+          rgba(255, 255, 255, 0.03) 0,
+          rgba(255, 255, 255, 0.03) 1px,
           transparent 1px,
-          transparent 82px
-        );
+          transparent 82px);
       pointer-events: none;
       opacity: 0.35;
     }
@@ -167,7 +170,9 @@
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
-    .btn:hover { transform: translateY(-2px); }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
 
     .btn-primary {
       background: linear-gradient(135deg, var(--accent), #dbffef);
@@ -176,7 +181,7 @@
     }
 
     .btn-secondary {
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
       color: var(--text);
       border: 1px solid var(--border);
     }
@@ -218,8 +223,8 @@
     .mini-stat {
       padding: 16px;
       border-radius: 16px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .mini-stat span {
@@ -279,9 +284,9 @@
     }
 
     .chip {
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
       color: var(--text);
-      border: 1px solid rgba(255,255,255,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 999px;
       padding: 8px 12px;
       font-size: 0.9rem;
@@ -356,8 +361,8 @@
       border-radius: 999px;
       padding: 7px 9px;
       font-size: 0.78rem;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .contact-card {
@@ -375,8 +380,8 @@
       color: var(--text);
       padding: 12px 14px;
       border-radius: 14px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .reveal {
@@ -391,6 +396,7 @@
     }
 
     @media (max-width: 920px) {
+
       .hero,
       .about-grid,
       .contact-grid,
@@ -414,17 +420,23 @@
         justify-content: center;
       }
 
-      h1 { font-size: 2.5rem; }
-      .mini-grid { grid-template-columns: 1fr; }
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .mini-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="container nav">
       <div class="brand">
-        <div class="brand-badge">Y</div>
-        <span>Your Name</span>
+        <div class="brand-badge">WH</div>
+        <span>Yong Weng Hong</span>
       </div>
       <nav class="nav-links">
         <a href="#home" class="active">Home</a>
@@ -461,20 +473,20 @@
         </p>
         <div class="mini-grid">
           <div class="mini-stat">
-            <span>Years experience</span>
-            <strong>4+</strong>
+            <span>Internship Experience</span>
+            <strong>6 months</strong>
           </div>
           <div class="mini-stat">
-            <span>Projects launched</span>
-            <strong>25+</strong>
+            <span>Projects Completed</span>
+            <strong>5+</strong>
           </div>
           <div class="mini-stat">
-            <span>Client satisfaction</span>
-            <strong>98%</strong>
+            <span>Focused</span>
+            <strong>AI & Software</strong>
           </div>
           <div class="mini-stat">
-            <span>Response time</span>
-            <strong>24h</strong>
+            <span>Availability</span>
+            <strong>Full-Time</strong>
           </div>
         </div>
       </aside>
@@ -499,8 +511,13 @@
             <span class="chip">CSS</span>
             <span class="chip">JavaScript</span>
             <span class="chip">UI Design</span>
-            <span class="chip">Responsive Layouts</span>
             <span class="chip">Frontend Systems</span>
+            <span class="chip">Frontend Systems</span>
+
+            <span class="chip">Large Language Models (LLMs)</span>
+            <span class="chip">Local AI Deployment</span>
+            <span class="chip">API Integration</span>
+            <span class="chip">AI Integration</span>
           </div>
         </div>
 
@@ -533,7 +550,8 @@
         <article class="project-card reveal">
           <span class="project-label">Case Study</span>
           <h3>Launch Campaign Landing Page</h3>
-          <p>Created a bold campaign experience with animated highlights, conversion-focused sections, and fast mobile performance.</p>
+          <p>Created a bold campaign experience with animated highlights, conversion-focused sections, and fast mobile
+            performance.</p>
           <div class="project-tags">
             <span>UI</span>
             <span>Motion</span>
@@ -544,7 +562,8 @@
         <article class="project-card reveal">
           <span class="project-label">Product</span>
           <h3>Interactive Dashboard Concept</h3>
-          <p>Designed a clean analytics interface with clear hierarchy, live data cards, and modular component patterns.</p>
+          <p>Designed a clean analytics interface with clear hierarchy, live data cards, and modular component patterns.
+          </p>
           <div class="project-tags">
             <span>Dashboard</span>
             <span>UX</span>
@@ -589,7 +608,8 @@
         <div class="section-card reveal">
           <h3 style="margin-top:0;">What I bring</h3>
           <p class="text-block">
-            A balance of visual craft and technical execution, focused on building pages that feel premium, fast, and easy to use.
+            A balance of visual craft and technical execution, focused on building pages that feel premium, fast, and
+            easy to use.
           </p>
           <div class="chip-wrap">
             <span class="chip">Fast iterations</span>
@@ -602,7 +622,7 @@
   </main>
 
   <script>
-    const words = ["web experiences", "creative interfaces", "modern products", "memorable brands"];
+    const words = ["web experiences", "creative interfaces", "modern products"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -660,4 +680,5 @@
     sections.forEach((section) => sectionObserver.observe(section));
   </script>
 </body>
+
 </html>
