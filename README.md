@@ -1,4 +1,4 @@
-# Hi, I'm Weng Hong 👋
+# Hi, I'm Yong Weng Hong 👋
 
 ## Software Engineering Graduate | Software Developer | AI Enthusiast
 
